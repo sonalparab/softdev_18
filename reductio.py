@@ -28,7 +28,7 @@ print group_freq(["the","a","letter"])
 print
 
 def most_freq():
-    return reduce(lambda a,b: a if a != b and freq(a) > freq(b) else b,book)
+    return reduce(lambda a,b: a if a != b and freq(a) > freq(b) else b,{w for w in book})
 
 print "Most frequent word"
 print most_freq()
